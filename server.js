@@ -48,6 +48,12 @@ app.get('/about', (req, res) => {
     });
 })
 
+app.get('/projects',(req, res) => {
+    res.render('projects.hbs', {
+      pageTitle: 'This is my ul portfolio.'
+    });
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     ErrorMessage: 'ErrorMessage'
